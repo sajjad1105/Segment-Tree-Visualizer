@@ -1,0 +1,63 @@
+#my-svg {
+  width: 100%;
+  height: 100%;
+}
+
+#svg-container {
+  position: relative; /* Ensures child elements (buttons) are positioned relative to this container */
+  width: 100%;
+  height: 660px;
+  border-radius: 10px;
+  border: 1px solid #0e695a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ✅ Keep buttons at the top-right corner */
+.buttons-container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ✅ Modern button styling */
+.buttons-container button {
+  gap: 8px;
+  background: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  backdrop-filter: blur(8px); /* ✅ Adds a glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+/* ✅ Improve button icon size */
+.buttons-container button img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* ✅ Hover effect */
+.buttons-container button:hover {
+  background: none; /* Remove background color */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+/* ✅ Hover effect for icons */
+.buttons-container button:hover img {
+  transform: rotate(10deg); /* Slight rotation for interaction */
+}
