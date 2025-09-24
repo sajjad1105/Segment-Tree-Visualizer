@@ -70,10 +70,10 @@ segment-tree-visualizer/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/segment-tree-visualizer.git
+git clone https://github.com/git@github.com:sajjad1105/Segment-Tree-Visualizer.git
 
 # Navigate to the project directory
-cd segment-tree-visualizer
+cd Segment-Tree-Visualizer
 
 # Install dependencies
 npm install
